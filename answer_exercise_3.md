@@ -12,6 +12,11 @@ En este momento puedo correr un contenedor y ver si nginx funciona. Para hacerlo
 
 ![title](images/hw3/nginxworking.png)
 
+Una vez el tengo el contenedor corriendo puedo ver en la dirección 8080/index.html el fichero.
+
+![title](images/hw3/homework1.png)
+
+
 
 # b. Al acceder a la URL localhost:8080/index.html aparecerá el mensaje HOMEWORK 1 
 

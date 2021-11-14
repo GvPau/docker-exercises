@@ -32,9 +32,12 @@ En la ruta 8080/ la aplicación simulará que no funciona y en la ruta /health n
 • Ajustar el tiempo de espera de la primera prueba (Ejemplo: Si la aplicación del contenedor tarda en iniciarse 10s, configurar el parámetro a 15s)
 • El número de reintentos será 2. Si fallan dos pruebas consecutivas, el contenedor deberá cambiar al estado “unhealthy”)
 
-Como tenemos un endpoint que no funciona y deja la aplicación sin funcionar podemos hacer uso de un healthcheck para arreglar este caso y dejar el contenedor en unhealthy.:
+Como tenemos un endpoint que no funciona y deja la aplicación sin funcionar podemos hacer uso de un healthcheck para arreglar este caso y dejar el contenedor en unhealthy:
+
 Para configurar el heathcheck hay que utilizar el comando:
+
 HEALTHCHECK –interval=? –timeout=? –start-period=? –retires=?
+
 En este caso con las configuraciones que nos piden en el ejercicio el Dockerfile quedaría de esta manera:
 
 ![title](images/hw4/dockerfilehealthcheck.png)
